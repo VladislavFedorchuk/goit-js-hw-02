@@ -3,7 +3,7 @@ function formatMessage(message, maxLength) {
     let stringLength = message.length;
     if (stringLength <= maxLength) {
        return message
-    } else if (stringLength >= maxLength){
+    } else {
         let stringSlise = message.slice(0, maxLength)
         return(`${stringSlise}...`)
     }
